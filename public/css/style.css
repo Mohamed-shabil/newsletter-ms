@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    padding: 50px 25px 0;
+    max-width: 668px;
+    width: 100%;
+    margin: auto;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.page-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+.wrapper .form{
+    max-width: 400px;
+    padding: 40px;
+    width: 100%;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.wrapper .formgroup {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.wrapper .formgroup input {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    padding: 11px 15px;
+    height: 48px;
+    border-radius: 0px;
+    color: #fff;
+    box-shadow: none;
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.wrapper .formgroup i{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    color:#fff;
+    display: none;
+}
+.wrapper .formgroup i.active{
+    display: block;
+}
+.wrapper .formgroup small{
+    background-color: #FC4F4F;
+    color: #f1f1f1;
+    border-radius: 3px;
+    width: auto; 
+}
+
+.wrapper .formgroup small.error{
+    display: block;
+}
+.wrapper .formgroup input:focus {
+    outline: none;
+}
+
+.wrapper .formgroup input::placeholder {
+    color: #f1f1f1;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+}
+
+.wrapper .btn {
+    width: 100%;
+    margin: 15px 0 30px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    padding: 12px 29px;
+    height: 48px;
+    text-transform: capitalize;
+    color: #222;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.wrapper .btn:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+@media (max-width:1030px) {
+    .wrapper::before {
+        left: -25%;
+        min-height: 60vh;
+        background-image: url('/images/img4.jfif');
+        background-position: left center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+
+    }
+}
+
+@media (max-width:768px) {
+    .wrapper {
+        max-width: 550px;
+    }
+
+    .wrapper .headlines {
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
