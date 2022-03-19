@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded ({extended:true}));
 app.use(express.static("public"));
 
 app.get('/',(req,res)=>{
-    res.sendFile(__dirname +'/index.html')
+    res.sendFile(__dirname +'/Index.html')
 })
 
 app.post('/',(req,res)=>{
@@ -43,7 +43,7 @@ app.post('/',(req,res)=>{
     const request = https.request(url,options,(response)=>{
 
         if (response.statusCode === 200) {
-            res.sendFile(__dirname+'/success.html')
+            res.sendFile(__dirname +'/success.html')
         }else{
             res.sendFile(__dirname+'/failure.html')
         }
